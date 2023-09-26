@@ -18,7 +18,7 @@
 </head>
 <body class="verBox">
     <?php include "../../comp/nav.php" ?>    
-    <h1>Curso  <?php echo $curso["nome"];?></h1>
+    <h1>Curso de <?php echo $curso["nome"];?></h1>
     <div class="verBox2">
         <div class="verBox3">
     <p>

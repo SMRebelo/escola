@@ -1,6 +1,6 @@
 <?php
     include "../../config/configs.php";
-    include "../../funcs/cursos.funcs.php"; 
+    include "../../funcs/cursos.funcs.php";  
 
     $id=$_GET['id'];
     $ligacao=ligarBD();
