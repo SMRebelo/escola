@@ -23,23 +23,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../editar.css">
     <title>Inscrições<?php echo $inscricao['id']; ?></title>
 </head>
-<body>
+<body class="editarBox">
     <?php include "../../comp/nav.php"; ?>
-    <h1>Editar Inscrição<?php echo $inscricao['id']; ?></h1>
-
+    <div class="editarBox2">
+    <h1>Editar Inscrição: <?php echo $inscricao['id']; ?></h1>
+    <div class="editarBox3">
     <form method="POST">
         <input type="hidden" name="id_inscricao" value="<?php echo $inscricao['id']; ?>">
-        <label>Ano Lectivo:</label>
-        <br>
-        <input type="text" name="ano_lectivo" value="<?php echo $inscricao['ano_lectivo']; ?>" required>
-        <br>
-        <label>Data Início:</label>
-        <br>
+        <div class="editarInput">
+        <label>Ano Lectivo:</label>        
+        <input type="text" name="ano_lectivo" value="<?php echo $inscricao['ano_lectivo']; ?>" required>        
+        <label>Data Início:</label>                 
         <input type="text" name="data_inicio" value="<?php echo $inscricao['data_inicio']; ?>" required>
-        <br><br>
+        </div>
+        <div class="editarButton">
         <input type="submit" value="Editar Inscrição">
+        </div>
     </form>
+    </div>
+    </div>
 </body>
 </html>

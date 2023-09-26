@@ -22,19 +22,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../editar.css">
     <title>Sexualidades<?php echo $genero['nome']; ?></title>
 </head>
-<body>
+<body class="editarBox">
     <?php include "../../comp/nav.php"; ?>
-    <h1>Editar Sexualidade<?php echo $genero['nome']; ?></h1>
-
+    <div class="editarBox2">
+    <h1>Editar Género: <?php echo $genero['nome']; ?></h1>
+    <div class="editarBox3">
     <form method="POST">
         <input type="hidden" name="id_genero" value="<?php echo $genero['id']; ?>">
-        <label>Género:</label>
-        <br>
+        <div class="editarInput">
+        <label>Género:</label>        
         <input type="text" name="nome" value="<?php echo $genero['nome']; ?>" required>
-        <br><br>
+        </div>
+        <div class="editarButton">
         <input type="submit" value="Editar Géneros">
+        </div>
     </form>
+    </div>
+    </div>
 </body>
 </html>

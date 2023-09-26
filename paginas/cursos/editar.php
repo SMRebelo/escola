@@ -1,6 +1,6 @@
 <?php
     include "../../config/configs.php";
-    include "../../funcs/cursos.funcs.php";  
+    include "../../funcs/cursos.funcs.php"; 
 
     $id=$_GET['id'];
     $ligacao=ligarBD();
@@ -22,19 +22,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../editar.css">
     <title>Editar Cursos<?php echo $curso['nome']; ?></title>
 </head>
-<body>
+<body class="editarBox">
     <?php include "../../comp/nav.php"; ?>
-    <h1>Editar Cursos<?php echo $curso['nome']; ?></h1>
-
+    <div class="editarBox2">
+    <h1>Editar Curso: <?php echo $curso['nome']; ?></h1>
+    <div class="editarBox3">
     <form method="POST">
         <input type="hidden" name="id_curso" value="<?php echo $curso['id']; ?>">
+        <div class="editarInput">
         <label>Curso:</label>
-        <br>
         <input type="text" name="nome" value="<?php echo $curso['nome']; ?>" required>
-        <br><br>
-        <input type="submit" value="Editar Cursos">
+        </div>
+        <div class="editarButton">
+        <input type="submit" value="Editar Curso">
+        </div>
     </form>
+    </div>
+    </div>
 </body>
 </html>

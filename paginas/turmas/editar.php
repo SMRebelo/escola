@@ -22,19 +22,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../editar.css">
     <title>Editar Turmas<?php echo $turma['nr_turma']; ?></title>
 </head>
-<body>
+<body class="editarBox">
     <?php include "../../comp/nav.php"; ?>
+    <div class="editarBox2">
     <h1>Editar Turmas<?php echo $turma['nr_turma']; ?></h1>
-
+    <div class="editarBox3">
     <form method="POST">
         <input type="hidden" name="id_turma" value="<?php echo $turma['id']; ?>">
+        <div class="editarInput">
         <label>Turma:</label>
-        <br>
         <input type="text" name="nr_turma" value="<?php echo $turma['nr_turma']; ?>" required>
-        <br><br>
+        </div>
+        <div class="editarButton">
         <input type="submit" value="Editar Turma">
+        </div>
     </form>
+    </div>
+</div>
 </body>
 </html>
