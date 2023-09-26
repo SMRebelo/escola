@@ -1,0 +1,45 @@
+.listar .boxTop {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 3.5em;
+   /* color: #fff;*/
+    gap: 1.5em;
+  }
+  .listar .boxTop > a {
+    text-decoration: none;
+    /*color: #fff;*/
+  }
+  .listar .boxBottom{
+    border: solid 1px red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .listar .boxBottom .tableTop{
+   display: flex;
+   flex-direction: row;
+   gap: 5em;
+   justify-content: center;
+   align-items: center;
+  
+  }
+  .listar .boxBottom .tableBottom{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    justify-content: center;
+   align-items: center;
+   }
+  
+   .listar .boxBottom .tableBottom .tableBottomId{
+    display: flex;
+    flex-direction: row;
+      justify-content: center;
+   align-items: center;
+   }
+    

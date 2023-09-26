@@ -45,6 +45,6 @@ function apagarCurso($ligacao, $id){
     $stmt->bindParam(":id", $id);
     $stmt->execute();
 
-    header("Location: ../cursos/listar.php");
+    header("Location: ../cursos/listar.php"); 
 }
 ?>

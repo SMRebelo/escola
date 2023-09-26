@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background-image: url("./background.png");
+ /* background-image: url("./background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center;*/
 }
 .box1 {
   display: flex;
@@ -31,7 +31,7 @@
 }
 .boxLeft > h1 > a {
   text-decoration: none;
-  color: #fff;
+  /*color: #fff;*/
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -56,12 +56,12 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  color: #fff;
+ /* color: #fff;*/
 }
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* LISTAR */
 
-.box2 {
+.listar .boxTop {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
@@ -69,58 +69,33 @@
   align-items: center;
   width: 100vw;
   min-height: 3.5em;
-  color: #fff;
+ /* color: #fff;*/
   gap: 1.5em;
 }
-.box2 > a {
+.listar .boxTop > a {
   text-decoration: none;
-  color: #fff;
+  /*color: #fff;*/
 }
-
-table {
+.listar .boxBottom{
+  border: solid 1px red;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
 }
-.tableBox {
+.listar .boxBottom .tableTop{
+ display: flex;
+ flex-direction: row;
+ gap: 5em;
+ justify-content: center;
+ align-items: center;
+
+}
+.listar .boxBottom .tableBottom{
   display: flex;
   flex-direction: row;
+  gap: 5em;
   justify-content: center;
-  align-items: center;
-  gap: 2em;
-
-}
-
-.id {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #26335d;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-}
-.nome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #26335d;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-}
-.area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #26335d;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
-}
+ align-items: center;
+ }
 

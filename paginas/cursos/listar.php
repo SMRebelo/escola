@@ -12,24 +12,27 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../style.css">
+        <link rel="stylesheet" href="../../styleListar.css">
+        
         <title>Gerir Cursos</title>
 
     </head>
-    <body>
-        <div class="box2">
+    <body class=listar>
+        <div class="boxTop">
         <?php include "../../comp/nav.php" ?>
         <h1>Gerir Cursos</h1>
         <a href="adicionar.php">Adicionar Curso</a><br><br>
         </div>
+        <div class="boxBottom">
         <table>
-            <tr class="tableBox">
-                <th class="id">ID</th>
-                <th class="nome">Nome</th>
-                <th class="area">Área de Gestão</th>
+            <tr class=tableTop>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Área de Gestão</th>
             </tr>
             <?php  
                 foreach ($cursos as $curso) { ?> 
-            <tr class="tableBox">
+            <tr class="tableBottm">
                 <td><?php echo $curso['id'];?></td>
                 <td><?php echo $curso['nome'];?></td>
                 <td>
@@ -40,6 +43,7 @@
             </tr>
             <?php } ?>
         </table>
+        </div>
         
     </body>
 </html>

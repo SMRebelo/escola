@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="./style.css">
-
 <nav class="box1">
     <div class="boxLeft">
     <h1><a href="/escola/index.php">Escola</h1>
