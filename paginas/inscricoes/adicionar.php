@@ -17,22 +17,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../adicionar.css">
     <title>inserir Inscrições<?php echo $inscricao["id"];?></title>
 </head>
-    <body>
+    <body class="adicionarBox">
         <?php include "../../comp/nav.php" ?>
-
-        <h1>Inserir nova Inscrição</h1>
+        <div class="adicionarBox2">
+        <h1>Adicionar nova Inscrição</h1>
+        <div class="adicionarBox3">
         <form method="POST">
+        <div class="adicionarInput">
             <label>Ano Lectivo:</label>        
-            <br>
+            
             <input type="text" name="ano_lectivo" required>
-            <br>
+            
             <label>Data Início:</label>        
-            <br>
+           
             <input type="text" name="data_inicio" required>      
-            <br><br>
+        </div>
+        <div class="adicionarButton">
             <input type="submit" value="Adicionar Inscrição">
+            </div>
         </form>
+        </div>
+        </div>
     </body>
 </html>

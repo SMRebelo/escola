@@ -14,7 +14,7 @@
 .verBox2{
     display: flex;
     flex-direction: column;
-    border: solid 2px #FFF;
+    border: solid 4px #26335d;
     justify-content: center;
     align-items: center;
     gap: 1em;

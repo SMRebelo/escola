@@ -16,18 +16,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../adicionar.css">
     <title>inserir novo Géneros <?php echo $editor["nome"];?></title>
 </head>
-    <body>
+    <body class="adicionarBox">
         <?php include "../../comp/nav.php" ?>
-
-        <h1>Inserir novo Género</h1>
+        <div class="adicionarBox2">
+        <h1>Adicionar novo Género</h1>
+        <div class="adicionarBox3">
         <form method="POST">
+        <div class="adicionarInput">
             <label>Sexo:</label>        
-            <br>
             <input type="text" name="nome" required>      
-            <br><br>
+        </div>
+        <div class="adicionarButton">
             <input type="submit" value="Adicionar Género">
+            </div>
         </form>
+        </div>
+        </div>
     </body>
 </html>

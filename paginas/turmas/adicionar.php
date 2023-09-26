@@ -16,18 +16,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
-    <title>inserir nova Turma<?php echo $turma["nr_turma"];?></title>
+    <link rel="stylesheet" href="../../adicionar.css">
+    <title>Inserir nova Turma<?php echo $turma["nr_turma"];?></title>
 </head>
-    <body>
+    <body class="adicionarBox">
         <?php include "../../comp/nav.php" ?>
-
-        <h1>Inserir nova Turma</h1>
+        <div class="adicionarBox2">
+        <h1>Adicionar nova Turma</h1>
+        <div class="adicionarBox3">
         <form method="POST">
+        <div class="adicionarInput">
             <label>Turma:</label>        
-            <br>
+           
             <input type="text" name="nr_turma" required>      
-            <br><br>
+            </div>
+            <div class="adicionarButton">
             <input type="submit" value="Adicionar Turma">
+            </div>
         </form>
+        </div>
+        </div>
     </body>
 </html>
