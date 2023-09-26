@@ -32,10 +32,10 @@
             </tr>
             <?php  
                 foreach ($cursos as $curso) { ?> 
-            <tr class="tableBottm">
+            <tr class="tableBottom">
                 <td><?php echo $curso['id'];?></td>
                 <td><?php echo $curso['nome'];?></td>
-                <td>
+                <td class="tableBottomOpcions">
                     <a href="ver.php?id=<?php echo $curso['id'];?>">Ver</a>
                     <a href="editar.php?id=<?php echo $curso['id'];?>">Editar</a>
                     <a href="apagar.php?id=<?php echo $curso['id'];?>">Apagar</a>

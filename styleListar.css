@@ -1,45 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.listar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .listar .boxTop {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    min-height: 3.5em;
-   /* color: #fff;*/
-    gap: 1.5em;
-  }
-  .listar .boxTop > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 1.5em;
+}
+.listar .boxTop > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border: solid 0.1px #26335D;
+  background: #26335D;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  
+}
+.listar .boxBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.listar .boxBottom .tableTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border: solid 1px #fff;
+  padding: 5px;
+
+}
+.listar .boxBottom .tableBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border: solid 1px #fff;
+  padding: 5px;
+}
+                
+.listar .boxBottom .tableBottom .tableBottomOpcions a{
     text-decoration: none;
-    /*color: #fff;*/
-  }
-  .listar .boxBottom{
-    border: solid 1px red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .listar .boxBottom .tableTop{
-   display: flex;
-   flex-direction: row;
-   gap: 5em;
-   justify-content: center;
-   align-items: center;
-  
-  }
-  .listar .boxBottom .tableBottom{
-    display: flex;
-    flex-direction: row;
-    gap: 5em;
-    justify-content: center;
-   align-items: center;
-   }
-  
-   .listar .boxBottom .tableBottom .tableBottomId{
-    display: flex;
-    flex-direction: row;
-      justify-content: center;
-   align-items: center;
-   }
-    
+    border: solid 0.1px #26335D;
+    background: #26335D;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
