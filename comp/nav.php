@@ -4,6 +4,7 @@
     </div>
     <div class="boxRight">
     <ul>
+        <li><a href="/escola/paginas/alunos/listar.php">Alunos</a></li>   
         <li><a href="/escola/paginas/generos/listar.php">Géneros</a></li>
         <li><a href="/escola/paginas/cursos/listar.php">Cursos</a></li>
         <li><a href="/escola/paginas/turmas/listar.php">Turmas</a></li>

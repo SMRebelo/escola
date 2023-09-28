@@ -1,4 +1,4 @@
-<?php 
+<?php  
 
 //Devolve todos os professores da base de dados
 
