@@ -22,7 +22,7 @@ function obterAluno($ligacao, $id){
     return $aluno;
 }
 
-// Insere um professor na base de dados 
+// Insere um aluno na base de dados 
 
 function inserirAluno($ligacao, $nome, $data_nascimento, $genero_id, $curso_id, $turma_id, $inscricao_id){
     
@@ -40,7 +40,7 @@ function inserirAluno($ligacao, $nome, $data_nascimento, $genero_id, $curso_id, 
     header("Location: ../alunos/listar.php");
 }
 
-// Edita um professor na base de dados 
+// Edita um aluno na base de dados 
 
 function editarAluno($ligacao, $id, $nome, $data_nascimento, $genero_id, $curso_id, $turma_id, $inscricao_id){
 

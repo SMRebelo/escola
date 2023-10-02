@@ -7,8 +7,7 @@ function obterCursos($ligacao){
     $cursos = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
     return $cursos;
-}
-//Devolve um Curso pelo seu ID 
+}//Devolve um Curso pelo seu ID 
 
 function obterCurso($ligacao, $id){
 
@@ -19,6 +18,7 @@ function obterCurso($ligacao, $id){
 
     return $curso;
 }
+
 //INSERE UM CURSO NA BASE DE DADOS 
 function inserirCurso($ligacao, $nome){
 
