@@ -1,0 +1,214 @@
+                                                          /*ADICIONAR*/
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+  }
+  .alunosBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .alunosBox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+  .alunosBox3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #fff;
+    padding: 10px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .alunosInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .alunosInput > input {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    background: rgb(38, 51, 93, 0.7);
+  }
+  .alunosButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.75em;
+  }
+  .alunosButton > input {
+    border: solid 0.1px #26335d;
+    background: #26335d;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+                                                              /*LISTAR*/
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.listar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.listar .boxTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 1.5em;  
+}
+.listar .boxTop > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border: solid 0.1px #26335D;
+  background: #26335D;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+
+}
+.listar .boxBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.listar .boxBottom .tableTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border: solid 1px #fff;
+  padding: 5px;
+
+}
+.listar .boxBottom .tableBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border: solid 1px #fff;
+  padding: 5px;
+}
+                
+.listar .boxBottom .tableBottom .tableBottomOpcions a{
+    text-decoration: none;
+    border: solid 0.1px #26335D;
+    background: #26335D;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+/*///////////////////////////////////////////LISTAR///////////////////////////////////*/
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+.alunoslistar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alunoslistar .alunosTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 1.5em;  
+}
+.alunoslistar .alunosTop > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  border: solid 0.1px #26335D;
+  background: #26335D;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+
+}
+.alunoslistar .alunosBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.alunoslistar .alunosBottom .alunosTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border: solid 1px #fff;
+  padding: 5px;
+
+}
+.alunoslistar .alunosBottom .alunosBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  border: solid 1px #fff;
+  padding: 5px;
+}
+                
+.alunoslistar .alunosBottom .alunosBottom .alunosBottomOpcions a{
+    text-decoration: none;
+    border: solid 0.1px #26335D;
+    background: #26335D;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
+}
+
+
+

@@ -23,16 +23,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../adicionar.css">
+    <link rel="stylesheet" href="../../alunos.css">
     <title>inserir Aluno<?php echo $aluno["nome"];?></title>
 </head>
-    <body class="adicionarBox">
+    <body class="alunosBox">
         <?php include "../../comp/nav.php" ?>
-        <div class="adicionarBox2">
+        <div class="alunosBox2">
         <h1>Adicionar novo Aluno</h1>
-        <div class="adicionarBox3">
+        <div class="alunosBox3">
         <form method="POST">
-        <div class="adicionarInput">
+        <div class="alunosInput">
 
             <label>Aluno:</label>      
            <input type="text" name="nome" required>  
@@ -48,7 +48,7 @@
            <input type="text" name="inscricao_id" required>      
             
         </div>
-        <div class="adicionarButton">
+        <div class="alunosButton">
             <input type="submit" value="Adicionar Aluno">
         </div>
         </form>
