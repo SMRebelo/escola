@@ -13,19 +13,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../ver.css">
+    <link rel="stylesheet" href="../../alunos.css">
     <title>Alunos<?php echo $aluno["nome"];?></title>
 </head>
-<body class="verBox">
+<body class="alunoVerBox">
     <?php include "../../comp/nav.php" ?>    
-    <h1>Alunos  <?php echo $aluno["nome"];?></h1>
-    <div class="verBox2">
-    <div class="verBox3">
+    <h1>Aluno:  <?php echo $aluno["nome"];?></h1>
+    <div class="alunoVerBox2">
+    <div class="alunoVerBox3">
     <p>
         <label>ID: </label><?php echo $aluno['id']; ?><br>
     </p>
     </div>
-    <div class="verBox4">
+    <div class="alunoVerBox4">
     <p>
         <label>Nome: </label><?php echo $aluno['nome']; ?><br>
     </p>

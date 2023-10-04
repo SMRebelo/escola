@@ -37,7 +37,7 @@
             <label>Aluno:</label>      
            <input type="text" name="nome" required>  
            <label>Data de Nascimento:</label>      
-           <input type="text" name="data_nascimento" required>
+           <input type="date" name="data_nascimento" required>
            <label>ID do Genero:</label>      
            <input type="text" name="genero_id" required>
            <label>ID do Curso:</label>      

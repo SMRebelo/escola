@@ -1,69 +1,4 @@
-                                                          /*ADICIONAR*/
-
-* {
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-  }
-  .alunosBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-  }
-  .alunosBox2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-  }
-  .alunosBox3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px #fff;
-    padding: 10px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-  }
-  .alunosInput {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5em;
-  }
-  .alunosInput > input {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    background: rgb(38, 51, 93, 0.7);
-  }
-  .alunosButton {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.75em;
-  }
-  .alunosButton > input {
-    border: solid 0.1px #26335d;
-    background: #26335d;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 3px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-                                                              /*LISTAR*/
+/*ADICIONAR*/
 
 * {
   margin: 0;
@@ -71,144 +6,231 @@
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-.listar {
+.alunosBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2em;
 }
-.listar .boxTop {
+.alunosBox2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  gap: 1.5em;  
+  gap: 2em;
 }
-.listar .boxTop > a {
+.alunosBox3 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  color: #fff;
-  border: solid 0.1px #26335D;
-  background: #26335D;
+  border: solid 2px #fff;
+  padding: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.alunosInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.alunosInput > input {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  background: rgb(38, 51, 93, 0.7);
+}
+.alunosButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.75em;
+}
+.alunosButton > input {
+  border: solid 0.1px #26335d;
+  background: #26335d;
   border-radius: 5px;
   margin: 5px;
-  padding: 5px;
+  padding: 3px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
+  cursor: pointer;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*LISTAR*/
 
-}
-.listar .boxBottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-.listar .boxBottom .tableTop {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2em;
-  border: solid 1px #fff;
-  padding: 5px;
-
-}
-.listar .boxBottom .tableBottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2em;
-  border: solid 1px #fff;
-  padding: 5px;
-}
-                
-.listar .boxBottom .tableBottom .tableBottomOpcions a{
-    text-decoration: none;
-    border: solid 0.1px #26335D;
-    background: #26335D;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 2px;
-}
-/*///////////////////////////////////////////LISTAR///////////////////////////////////*/
-
-* {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-}
 .alunoslistar {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.alunoslistar .alunosTop {
+.alunosTop {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
-  gap: 1.5em;  
+  gap: 1.5em;
 }
-.alunoslistar .alunosTop > a {
+.alunosTop > a {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #fff;
-  border: solid 0.1px #26335D;
-  background: #26335D;
+  border: solid 0.1px #26335d;
+  background: #26335d;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-
 }
-.alunoslistar .alunosBottom {
+.alunosBottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.alunoslistar .alunosBottom .alunosTop {
+.alunosBottomOpcions > a {
+  text-decoration: none;
+  border: solid 0.1px #26335d;
+  background: #26335d;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+}
+.tableBottom{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+}
+th{  
+  padding: 10px;
+}
+td{  
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background: rgba(78, 84, 103, 0.4);
+}
+th:nth-child(even),td:nth-child(even) {
+  background:rgba(38, 51, 93, 0.4);
+}
+
+th:nth-last-child(even),td:nth-last-child(even) {
+  background: rgba(38, 51, 93, 0.4);
+}
+tr:hover {background-color: #D6EEEE;}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\Ver/////////////////////////////*/
+
+.alunoVerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2em;
-  border: solid 1px #fff;
-  padding: 5px;
-
 }
-.alunoslistar .alunosBottom .alunosBottom {
+.alunoVerBox2{
+    display: flex;
+    flex-direction: column;
+    border: solid 4px #26335d;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
+    gap: 2em;
+}
+.alunoVerBox3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;    
+}
+.alunoVerBox4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    gap: 2em;
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\EDITAR///////////////////////////////////////////////*/
+
+.alunoEditarBox {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2em;
-  border: solid 1px #fff;
-  padding: 5px;
 }
-                
-.alunoslistar .alunosBottom .alunosBottom .alunosBottomOpcions a{
-    text-decoration: none;
-    border: solid 0.1px #26335D;
-    background: #26335D;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 2px;
+.alunoEditarBox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }
+.alunoEditarBox3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #fff;
+  padding: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+.alunoEditarInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+.alunoEditarInput > input {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  background: rgb(38, 51, 93, 0.7) ;
+}
+.alunoEditarButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.75em;
+}
+.alunoEditarButton > input {
+  border: solid 0.1px #26335d;
+  background: #26335d;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 3px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
 
-
-
+}

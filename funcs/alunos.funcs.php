@@ -4,7 +4,8 @@
 
 function obterAlunos($ligacao){
 
-    $stmt = $ligacao->query("SELECT * FROM alunos");
+    $stmt = $ligacao->query("SELECT a.id, a.nome nome_aluno, a.data_nascimento, g.nome genero, c.nome curso, t.nr_turma turma, a.inscricao_id  FROM alunos a, genero g, curso c, turma t where a.genero_id = g.id and  a.curso_id = c.id and a.turma_id = t.id");
+
     $alunos = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
     return $alunos;

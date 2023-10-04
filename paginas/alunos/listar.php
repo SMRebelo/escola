@@ -22,8 +22,8 @@
         <a href="adicionar.php">Adicionar Aluno</a><br><br>
     </div>
     <div class="alunosBottom">
-        <table>
-        <tr class=alunosTop>
+        <table class="tableBottom">
+        <tr class="topRow">
             <th>ID</th>
             <th>Nome</th>
             <th>D. Nascimento</th>
@@ -35,14 +35,21 @@
         </tr>
         <?php
             foreach($alunos as $aluno) { ?>
-        <tr class="alunosBottom">
+        <tr class="bottomRow">  
             <td><?php echo $aluno['id'];?></td>
-            <td><?php echo $aluno['nome'];?></td>
+
+            <td><?php echo $aluno['nome_aluno'];?></td>
+
             <td><?php echo $aluno['data_nascimento'];?></td>
-            <td><?php echo $aluno['genero_id'];?></td>
-            <td><?php echo $aluno['curso_id'];?></td>
-            <td><?php echo $aluno['turma_id'];?></td>
+
+            <td><?php echo $aluno['genero'];?></td>
+
+            <td><?php echo $aluno['curso'];?></td>
+
+            <td><?php echo $aluno['turma'];?></td>
+
             <td><?php echo $aluno['inscricao_id'];?></td>
+
 
 
         <td class="alunosBottomOpcions">

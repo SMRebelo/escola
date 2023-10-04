@@ -29,11 +29,11 @@
         <div class="adicionarInput">
             <label>Ano Lectivo:</label>        
             
-            <input type="text" name="ano_lectivo" required>
+            <input type="date" name="ano_lectivo" required>
             
             <label>Data Início:</label>        
            
-            <input type="text" name="data_inicio" required>      
+            <input type="date" name="data_inicio" required>      
         </div>
         <div class="adicionarButton">
             <input type="submit" value="Adicionar Inscrição">
