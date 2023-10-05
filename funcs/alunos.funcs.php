@@ -13,9 +13,14 @@ function obterAlunos($ligacao){
 
 // Devolve um aluno pelo seu ID
 
-function obterAluno($ligacao, $id){
-    
-    $stmt = $ligacao->prepare("SELECT * FROM alunos WHERE id = :id");
+function obterAluno($ligacao, $id) {
+    $stmt = $ligacao->prepare("SELECT a.id, a.nome, a.data_nascimento, g.nome genero, c.nome curso, t.nr_turma turma, a.inscricao_id 
+        FROM alunos a
+        INNER JOIN genero g ON a.genero_id = g.id 
+        INNER JOIN curso c ON a.curso_id = c.id 
+        INNER JOIN turma t ON a.turma_id = t.id 
+        WHERE a.id = :id");
+
     $stmt->bindParam(":id", $id);
     $stmt->execute(); 
     $aluno = $stmt->fetch(PDO::FETCH_ASSOC);

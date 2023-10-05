@@ -30,19 +30,19 @@
         <label>Nome: </label><?php echo $aluno['nome']; ?><br>
     </p>
     <p>
-        <label>Data Nascimento: </label><?php echo $aluno['data_nascimento']; ?><br>
+        <label>D. Nascimento: </label><?php echo $aluno['data_nascimento']; ?><br>
     </p>
     <p>
-        <label>ID do Genero: </label><?php echo $aluno['genero_id']; ?><br>
+        <label>Género: </label><?php echo $aluno['genero']; ?><br>
     </p>
     <p>
-        <label>ID do Curso: </label><?php echo $aluno['curso_id']; ?><br>
+        <label>Curso: </label><?php echo $aluno['curso']; ?><br>
     </p>
     <p>
-        <label>ID da Turma: </label><?php echo $aluno['turma_id']; ?><br>
+        <label>Turma: </label><?php echo $aluno['turma']; ?><br>
     </p>
     <p>
-        <label>ID da Inscrição: </label><?php echo $aluno['inscricao_id']; ?><br>
+        <label>Inscrição: </label><?php echo $aluno['inscricao_id']; ?><br>
     </p>
     </div>
     </div>
