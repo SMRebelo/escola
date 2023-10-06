@@ -34,7 +34,6 @@ function inserirAluno($ligacao, $nome, $data_nascimento, $genero_id, $curso_id, 
     
     $stmt = $ligacao->prepare("INSERT INTO alunos (nome, data_nascimento, genero_id, curso_id, turma_id, inscricao_id) VALUES (:nome, :data_nascimento, :genero_id, :curso_id, :turma_id, :inscricao_id)");
 
-
     $stmt->bindParam(":nome", $nome);
     $stmt->bindParam(":data_nascimento", $data_nascimento);
     $stmt->bindParam(":genero_id", $genero_id);
@@ -50,7 +49,7 @@ function inserirAluno($ligacao, $nome, $data_nascimento, $genero_id, $curso_id, 
 
 function editarAluno($ligacao, $id, $nome, $data_nascimento, $genero_id, $curso_id, $turma_id, $inscricao_id){
 
-    $stmt=$ligacao->prepare("UPDATE alunos SET nome=:nome, data_nascimento=:data_nascimento, genero_id=:genero_id, curso_id=:curso_id, turma_id=:turma_id, inscricao_id=:inscricao_id WHERE id=:id");
+    $stmt=$ligacao->prepare("UPDATE alunos a SET nome=:nome, data_nascimento=:data_nascimento, genero_id=:genero_id, curso_id=:curso_id, turma_id=:turma_id, inscricao_id=:inscricao_id WHERE id=:id");
     $stmt->bindParam(":id", $id);
     $stmt->bindParam(":nome", $nome);
     $stmt->bindParam(":data_nascimento", $data_nascimento);

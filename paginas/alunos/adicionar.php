@@ -1,4 +1,4 @@
-<?php 
+<?php  
     include "../../config/configs.php";
     include "../../funcs/alunos.funcs.php";
 
@@ -8,9 +8,9 @@
 
         $nome = $_POST['nome'];
         $data_nascimento = $_POST['data_nascimento'];
-        $genero_id = $_POST['genero_id'];
-        $curso_id = $_POST['curso_id'];
-        $turma_id = $_POST['turma_id'];
+        $genero_id = $_POST['genero'];
+        $curso_id = $_POST['curso'];
+        $turma_id = $_POST['turma'];
         $inscricao_id = $_POST['inscricao_id'];
 
 
@@ -34,18 +34,34 @@
         <form method="POST">
         <div class="alunosInput">
 
-            <label>Aluno:</label>      
-           <input type="text" name="nome" required>  
-           <label>Data de Nascimento:</label>      
-           <input type="date" name="data_nascimento" required>
-           <label>ID do Genero:</label>      
-           <input type="text" name="genero_id" required>
-           <label>ID do Curso:</label>      
-           <input type="text" name="curso_id" required>
-           <label>ID da Turma:</label>      
-           <input type="text" name="turma_id" required>
-           <label>ID da Inscrição:</label>      
-           <input type="text" name="inscricao_id" required>      
+        <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br> 
+
+            <label for="data_nascimento">Data de Nascimento:</label>
+    <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+    <label for="genero">Gênero:</label>
+    <select id="genero" name="genero" required>
+        <option value="1">Masculino</option>
+        <option value="2">Feminino</option>
+    </select>
+
+    <label for="curso">Curso:</label>
+    <select id="curso" name="curso" required>
+        <option value="1">Informática</option>
+        <option value="2">Ciências</option>
+        <option value="3">Economia</option>
+        <option value="4">Desporto</option>
+    </select><br>
+
+    <label for="turma">Turma:</label>
+    <select id="turma" name="turma" required>
+        <option value="1">666</option>
+        <option value="2">999</option>
+    </select><br>
+
+           <label for="inscricao_id">Inscrição:</label>      
+           <input type="text" id="inscricao_id" name="inscricao_id" required>      
             
         </div>
         <div class="alunosButton">
