@@ -11,7 +11,7 @@
         $genero_id = $_POST['genero'];
         $curso_id = $_POST['curso'];
         $turma_id = $_POST['turma'];
-        $inscricao_id = $_POST['inscricao_id'];
+        $inscricao_id = $_POST['inscricao'];
 
 
         inserirAluno($ligacao, $nome, $data_nascimento, $genero_id, $curso_id, $turma_id, $inscricao_id);
@@ -35,10 +35,10 @@
         <div class="alunosInput">
 
         <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br> 
+            <input type="text" id="nome" name="nome" required>
 
             <label for="data_nascimento">Data de Nascimento:</label>
-    <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+    <input type="date" id="data_nascimento" name="data_nascimento" required>
 
     <label for="genero">Gênero:</label>
     <select id="genero" name="genero" required>
@@ -52,16 +52,21 @@
         <option value="2">Ciências</option>
         <option value="3">Economia</option>
         <option value="4">Desporto</option>
-    </select><br>
+    </select>
 
     <label for="turma">Turma:</label>
     <select id="turma" name="turma" required>
         <option value="1">666</option>
         <option value="2">999</option>
-    </select><br>
+    </select>
 
-           <label for="inscricao_id">Inscrição:</label>      
-           <input type="text" id="inscricao_id" name="inscricao_id" required>      
+    <label for="inscricao">Inscrição:</label>
+    <select id="inscricao" name="inscricao" required>
+        <option value="1">2023-06-15</option>
+        <option value="2">2023-06-15</option>
+        <option value="3">2023-06-15</option>
+        <option value="4">2024-06-23</option>
+    </select><br>    
             
         </div>
         <div class="alunosButton">

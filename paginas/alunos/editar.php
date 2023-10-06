@@ -1,6 +1,11 @@
 <?php
     include "../../config/configs.php";
     include "../../funcs/alunos.funcs.php"; 
+    include "../../funcs/generos.funcs.php"; 
+    include "../../funcs/cursos.funcs.php"; 
+    include "../../funcs/turmas.funcs.php"; 
+    include "../../funcs/inscricoes.funcs.php"; 
+
 
     $id=$_GET['id'];
     $ligacao=ligarBD();
@@ -41,18 +46,55 @@
 
 
         <div class="alunoEditarInput">
-        <label>Aluno:</label>
-        <input type="text" name="nome" value="<?php echo $aluno['nome']; ?>" required>
-        <label>Data Nascimento:</label>
-        <input type="text" name="data_nascimento" value="<?php echo $aluno['data_nascimento']; ?>" required>
-        <label>Género:</label>
-        <input type="text" name="genero_id" value="<?php echo $aluno['genero_id']; ?>" required>
-        <label>Curso:</label>
-        <input type="text" name="curso_id" value="<?php echo $aluno['curso_id']; ?>" required>
-        <label>Turma:</label>
-        <input type="text" name="turma_id" value="<?php echo $aluno['turma_id']; ?>" required>
-        <label>Inscrição:</label>
-        <input type="text" name="inscricao_id" value="<?php echo $aluno['inscricao_id']; ?>" required>
+        <label for="nome">Aluno:</label>
+        <input type="text" id="nome" name="nome" value="<?php echo $aluno['nome']; ?>" required>
+
+        <label for="data_nascimento">Data Nascimento:</label>
+        <input type="text" id="data_nascimento" name="data_nascimento" value="<?php echo $aluno['data_nascimento']; ?>" required>
+
+        <label for="genero_id">Género:</label>
+                    <select id="genero_id" name="genero_id" required>
+                        <?php
+                        $generos = obterGeneros($ligacao);
+                        foreach ($generos as $genero) {
+                            $selected = ($genero['id'] == $aluno['genero_id']) ? 'selected' : '';
+                            echo '<option value="' . $genero['id'] . '" ' . $selected . '>' . $genero['nome'] . '</option>';
+                        }
+                        ?>
+                    </select>
+
+        <label for="curso_id">Curso:</label>
+                    <select id="curso_id" name="curso_id" required>
+                        <?php
+                        $cursos = obterCursos($ligacao);
+                        foreach ($cursos as $curso) {
+                            $selected = ($curso['id'] == $aluno['curso_id']) ? 'selected' : '';
+                            echo '<option value="' . $curso['id'] . '" ' . $selected . '>' . $curso['nome'] . '</option>';
+                        }
+                        ?>
+                    </select>
+
+        <label for="turma_id">Turma:</label>
+                    <select id="turma_id" name="turma_id" required>
+                        <?php
+                        $turmas = obterTurmas($ligacao);
+                        foreach ($turmas as $turma) {
+                            $selected = ($turma['id'] == $aluno['turma_id']) ? 'selected' : '';
+                            echo '<option value="' . $turma['id'] . '" ' . $selected . '>' . $turma['nr_turma'] . '</option>';
+                        }
+                        ?>
+                    </select>
+
+                    <label for="inscricoes_id">Inscrição:</label>
+                    <select id="inscricoes_id" name="inscricoes_id" required>
+                        <?php
+                        $inscricoes = obterInscricoes($ligacao);
+                        foreach ($inscricoes as $inscricao) {
+                            $selected = ($inscricao['id'] == $aluno['inscricoes_id']) ? 'selected' : '';
+                            echo '<option value="' . $inscricao['id'] . '" ' . $selected . '>' . $inscricao['data_inicio'] . '</option>';
+                        }
+                        ?>
+                    </select>
         </div>
 
         <div class="alunoEditarButton">
