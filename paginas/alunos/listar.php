@@ -1,5 +1,5 @@
 <?php 
-    include "../../config/configs.php";
+    include "../../config/configs.php"; 
     include "../../funcs/alunos.funcs.php";
 
     $ligacao = ligarBD();

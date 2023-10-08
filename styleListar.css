@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; 
 }
 .listar {
   display: flex;
@@ -20,52 +20,65 @@
 }
 .listar .boxTop > a {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #fff;
-  border: solid 0.1px #26335D;
-  background: #26335D;
+  border: solid 0.1px #26335d;
+  background: #26335d;
   border-radius: 5px;
   margin: 5px;
   padding: 5px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-
 }
-.listar .boxBottom {
+.boxBottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
-.listar .boxBottom .tableTop {
+.tableBottomOpcions a{
+  text-decoration: none;
+  border: solid 0.1px #26335D;
+  background: #26335D;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px;
+}
+table {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 2em;
-  border: solid 1px #fff;
-  padding: 5px;
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+}
+th {
+  padding: 10px;
+}
+td {
+  padding: 10px;
+}
+tr:nth-child(even) {
+  background: rgba(78, 84, 103, 0.4);
+}
+th:nth-child(even),
+td:nth-child(even) {
+  background: rgba(38, 51, 93, 0.4);
+}
 
+th:nth-last-child(even),
+td:nth-last-child(even) {
+  background: rgba(38, 51, 93, 0.4);
 }
-.listar .boxBottom .tableBottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2em;
-  border: solid 1px #fff;
-  padding: 5px;
-}
-                
-.listar .boxBottom .tableBottom .tableBottomOpcions a{
-    text-decoration: none;
-    border: solid 0.1px #26335D;
-    background: #26335D;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 2px;
+tr:hover {
+  background-color: #d6eeee;
 }

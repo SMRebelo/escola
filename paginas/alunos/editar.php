@@ -85,12 +85,12 @@
                         ?>
                     </select>
 
-                    <label for="inscricoes_id">Inscrição:</label>
-                    <select id="inscricoes_id" name="inscricoes_id" required>
+                    <label for="inscricao_id">Inscrição:</label>
+                    <select id="inscricao_id" name="inscricao_id" required>
                         <?php
                         $inscricoes = obterInscricoes($ligacao);
                         foreach ($inscricoes as $inscricao) {
-                            $selected = ($inscricao['id'] == $aluno['inscricoes_id']) ? 'selected' : '';
+                            $selected = ($inscricao['id'] == $aluno['inscricao_id']) ? 'selected' : '';
                             echo '<option value="' . $inscricao['id'] . '" ' . $selected . '>' . $inscricao['data_inicio'] . '</option>';
                         }
                         ?>
